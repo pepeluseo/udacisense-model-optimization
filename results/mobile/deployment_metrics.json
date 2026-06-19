@@ -1,0 +1,36 @@
+{
+    "evaluation_mode": "fast_sample_based",
+    "note": "Accuracy was evaluated on a limited number of test batches to reduce notebook runtime. Full-device benchmarking is recommended before production deployment.",
+    "optimized_model": {
+        "path": "../models/pipeline/pruning_finetuning_dynamic_quantization/model.pth",
+        "size_mb": 4.230539321899414,
+        "accuracy": 0.8046875,
+        "latency": {
+            "avg_time_ms": 129.8889865865931,
+            "std_time_ms": 42.03962340710583,
+            "min_time_ms": 100.02112900838256,
+            "max_time_ms": 198.30912491306663,
+            "num_runs": 20
+        }
+    },
+    "mobile_model": {
+        "path": "../models/mobile/optimized_model_mobile.pt",
+        "size_mb": 4.125997543334961,
+        "accuracy": 0.8046875,
+        "latency": {
+            "avg_time_ms": 10624.98681882862,
+            "std_time_ms": 1021.9022446943068,
+            "min_time_ms": 8602.015875279903,
+            "max_time_ms": 13103.968153707683,
+            "num_runs": 20
+        }
+    },
+    "prediction_agreement": 1.0,
+    "accuracy_difference": 0.0,
+    "latency_difference_percent": 8080.052133785231,
+    "size_difference_percent": -2.4711217792798177,
+    "mobile_lite_model": {
+        "path": "../models/mobile/optimized_model_mobile.ptl",
+        "size_mb": 4.712580680847168
+    }
+}

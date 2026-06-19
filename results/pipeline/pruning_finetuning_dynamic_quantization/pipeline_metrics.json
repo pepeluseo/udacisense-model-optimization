@@ -1,0 +1,108 @@
+{
+    "pipeline_name": "pruning_finetuning_dynamic_quantization",
+    "steps": [
+        {
+            "step_number": 1,
+            "step_name": "In-Training Pruning with Fine-Tuning",
+            "model_path": "../models/pipeline/pruning_finetuning_dynamic_quantization/checkpoints/step_1_in-training_pruning_with_fine-tuning.pth",
+            "metrics": {
+                "size": {
+                    "model_size_mb": 5.967691421508789,
+                    "total_params": 1528106,
+                    "trainable_params": 1528106
+                },
+                "accuracy": {
+                    "top1_acc": 0.791
+                },
+                "timing": {
+                    "cpu": {
+                        "avg_time_ms": 133.99910958018154,
+                        "std_time_ms": 43.63381515426882,
+                        "min_time_ms": 98.83543709293008,
+                        "max_time_ms": 205.1458889618516,
+                        "num_runs": 100
+                    }
+                }
+            },
+            "comparison": {
+                "size_reduction": -0.0031317519183102645,
+                "size_reduction_percent": -0.31317519183102643,
+                "inference_speedup": 0.04325249337045798,
+                "inference_speedup_percent": 4.325249337045798,
+                "accuracy_drop": 0.08699999999999997,
+                "accuracy_drop_percent": 8.699999999999996,
+                "meets_size_target": false,
+                "meets_speed_target": false,
+                "meets_accuracy_target": false
+            },
+            "extra_info": null
+        },
+        {
+            "step_number": 2,
+            "step_name": "Dynamic Quantization",
+            "model_path": "../models/pipeline/pruning_finetuning_dynamic_quantization/checkpoints/step_2_dynamic_quantization.pth",
+            "metrics": {
+                "size": {
+                    "model_size_mb": 4.24547004699707,
+                    "total_params": 927008,
+                    "trainable_params": 927008
+                },
+                "accuracy": {
+                    "top1_acc": 0.791
+                },
+                "timing": {
+                    "cpu": {
+                        "avg_time_ms": 149.91108166985214,
+                        "std_time_ms": 111.57343989013344,
+                        "min_time_ms": 100.4293579608202,
+                        "max_time_ms": 1001.7315121367574,
+                        "num_runs": 100
+                    }
+                }
+            },
+            "comparison": {
+                "size_reduction": 0.28636293247143896,
+                "size_reduction_percent": 28.636293247143897,
+                "inference_speedup": -0.07035825874608294,
+                "inference_speedup_percent": -7.035825874608294,
+                "accuracy_drop": 0.08699999999999997,
+                "accuracy_drop_percent": 8.699999999999996,
+                "meets_size_target": false,
+                "meets_speed_target": false,
+                "meets_accuracy_target": false
+            },
+            "extra_info": null
+        }
+    ],
+    "final_model_path": "../models/pipeline/pruning_finetuning_dynamic_quantization/model.pth",
+    "final_metrics": {
+        "size": {
+            "model_size_mb": 4.230539321899414,
+            "total_params": 927008,
+            "trainable_params": 927008
+        },
+        "accuracy": {
+            "top1_acc": 0.791
+        },
+        "timing": {
+            "cpu": {
+                "avg_time_ms": 138.96710040513426,
+                "std_time_ms": 51.23299243498412,
+                "min_time_ms": 100.13473266735673,
+                "max_time_ms": 401.69085608795285,
+                "num_runs": 100
+            }
+        }
+    },
+    "final_comparison": {
+        "size_reduction": 0.2888726943486434,
+        "size_reduction_percent": 28.887269434864336,
+        "inference_speedup": 0.007781266362879844,
+        "inference_speedup_percent": 0.7781266362879844,
+        "accuracy_drop": 0.08699999999999997,
+        "accuracy_drop_percent": 8.699999999999996,
+        "meets_size_target": false,
+        "meets_speed_target": false,
+        "meets_accuracy_target": false
+    }
+}

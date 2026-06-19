@@ -1,0 +1,2 @@
+pipeline_name,final_model_size_mb,final_total_params,final_accuracy,final_cpu_inference_ms,size_reduction_%,speedup_%,accuracy_drop,meets_size_target,meets_speed_target,meets_accuracy_target,final_model_path
+pruning_finetuning_dynamic_quantization,4.230539321899414,927008,0.791,138.96710040513426,28.887269434864336,0.7781266362879844,0.08699999999999997,False,False,False,../models/pipeline/pruning_finetuning_dynamic_quantization/model.pth

@@ -1,0 +1,4 @@
+model,file_path,size_mb,top1_accuracy_sample,top1_accuracy_sample_%,avg_cpu_latency_ms,std_cpu_latency_ms
+Optimized Pipeline Model,../models/pipeline/pruning_finetuning_dynamic_quantization/model.pth,4.230539321899414,0.8046875,80.46875,129.8889865865931,42.03962340710583
+Mobile TorchScript Model,../models/mobile/optimized_model_mobile.pt,4.125997543334961,0.8046875,80.46875,10624.98681882862,1021.9022446943068
+Mobile Lite Interpreter Model,../models/mobile/optimized_model_mobile.ptl,4.712580680847168,0.8046875,80.46875,10624.98681882862,1021.9022446943068
