@@ -43,7 +43,7 @@ The optimized model successfully meets the CTO requirements for mobile deploymen
 
 Below is the execution of the optimization pipeline:
 
-![Pipeline Execution](screenshots/Pipeline_runing_finetuning_dynamic_quantization.png)
+![Pipeline Execution](screenshots/pipeline-running.png)
 
 ---
 
@@ -51,7 +51,7 @@ Below is the execution of the optimization pipeline:
 
 Example images from the dataset:
 
-![Dataset Examples](screenshots/Examples_images_from_test.png)
+![Dataset Examples](screenshots/dataset-examples.png)
 
 ---
 
@@ -59,7 +59,7 @@ Example images from the dataset:
 
 Comparison between optimized model and mobile model:
 
-![Deployment Comparison](screenshots/Deployment_comparison.png)
+![Deployment Comparison](screenshots/deployment-comparison.png)
 
 ---
 
